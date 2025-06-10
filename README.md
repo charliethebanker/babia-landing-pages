@@ -1,6 +1,6 @@
 # BABIA Landing Pages
 
-> 3 páginas de vendas diferentes para o curso BABIA da Isabel Digital
+3 páginas de vendas diferentes para o curso BABIA da Isabel Digital
 
 ## 📋 Visão Geral
 
@@ -65,205 +65,58 @@ babia-landing-pages/
   - A/B test ready
   - Performance máxima
 
-## 🚀 Implementação Rápida
+## 📋 Informações do Projeto
 
-### 1. Extrair Assets da Página Original
+- **Cliente**: Isabel Digital (@isabeldigitall)
+- **Produto**: BABIA - Bê-à-Bá da Inteligência Artificial
+- **Preço**: De 97€ por 67€
+- **Formato**: 3 horas de vídeo gravado
 
-**MUITO IMPORTANTE**: Antes de usar as páginas, extrair todas as imagens de https://www.isabeldigitall.pt/babia/
+## 🎨 Cores da Marca
 
-1. Abrir a página original no browser
-2. Clicar com botão direito em cada imagem
-3. "Guardar imagem como..." na pasta `assets/original/`
-4. Seguir as instruções em `docs/assets-instructions.md`
+- Rosa: `#d90368`
+- Branco: `#ffffff`
+- Preto: `#000000`
 
-### 2. Configurar Analytics
+## 🚀 Como Visualizar
 
-Descomentar e configurar nos arquivos HTML:
+### Opção 1: Abrir diretamente
+Fazer duplo clique nos ficheiros HTML
 
-```html
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
-<script>
-  gtag('config', 'YOUR_GA_ID');
-</script>
-
-<!-- Facebook Pixel -->
-<script>
-  fbq('init', 'YOUR_PIXEL_ID');
-</script>
+### Opção 2: Servidor local
+```bash
+python -m http.server 8000
+# Depois abrir: http://localhost:8000
 ```
 
-### 3. Configurar WooCommerce
+### Opção 3: GitHub Pages
+Após ativar GitHub Pages, aceder a:
+- https://charliethebanker.github.io/babia-landing-pages/
 
-Substituir os links `#checkout` pelos URLs reais:
-- `href="#checkout"` → `href="https://checkout.isabeldigitall.pt/babia"`
+## 📱 Testar Responsividade
 
-### 4. Upload e Teste
+1. Abrir no browser
+2. F12 → Toggle device toolbar
+3. Testar em diferentes dispositivos
 
-1. Fazer upload dos arquivos para o servidor
-2. Testar em dispositivos diferentes
-3. Verificar velocidade de carregamento
-4. Testar formulários e links
+## ✅ Checklist
 
-## 🛠️ Conversão para WordPress/Elementor
+- [ ] Todas as imagens carregam
+- [ ] Animações funcionam
+- [ ] Mobile responsivo
+- [ ] Botões clicáveis
+- [ ] Countdown timer ativo
+- [ ] Cores corretas
 
-### Opção 1: Elementor (Recomendado)
+## 🛠️ Tecnologias
 
-1. **Criar Nova Página no WordPress**
-2. **Editar com Elementor**
-3. **Copiar Secções HTML**:
-   - Hero → Widget HTML do Elementor
-   - Stats → Widget Contador
-   - Testemunhos → Widget Galeria
-   - CTA → Widget Botão
-4. **Adicionar CSS Personalizado**:
-   - Elementor > Avançado > CSS Personalizado
-   - Copiar CSS relevante de cada página
+- HTML5
+- CSS3 (com animações)
+- JavaScript vanilla
+- Mobile-first design
+- SEO otimizado
+- WooCommerce ready
 
-### Opção 2: Child Theme
+## 📞 Contacto
 
-1. **Criar Child Theme**
-2. **Adicionar Template Personalizado**:
-   ```php
-   <?php
-   /* Template Name: BABIA Landing */
-   get_header();
-   // Incluir HTML da página escolhida
-   get_footer();
-   ?>
-   ```
-3. **Enqueue CSS e JS**:
-   ```php
-   wp_enqueue_style('babia-style', get_stylesheet_directory_uri() . '/babia.css');
-   wp_enqueue_script('babia-script', get_stylesheet_directory_uri() . '/babia.js');
-   ```
-
-## 📱 Otimizações de Performance
-
-### CSS
-- ✅ Critical CSS inline
-- ✅ Fontes do sistema para velocidade
-- ✅ CSS minificado pronto
-- ✅ Mobile-first approach
-
-### JavaScript
-- ✅ Vanilla JS (sem jQuery)
-- ✅ Async loading
-- ✅ Lazy loading de imagens
-- ✅ Debounce/throttle em eventos
-
-### Imagens
-- ✅ Alt text em todas as imagens
-- ✅ Loading lazy
-- ✅ Placeholder otimizados
-- ⚠️ **TODO**: Comprimir imagens originais
-
-## 🔧 Configurações Avançadas
-
-### A/B Testing (Página 3)
-
-A página minimalista está preparada para A/B testing:
-
-```javascript
-// Versão A (rosa) ou B (verde)
-setTestVersion('a'); // ou 'b'
-```
-
-### Analytics Avançados
-
-O `common.js` inclui tracking de:
-- Page views
-- CTA clicks  
-- Scroll depth
-- Video events
-- Form submissions
-- Time on page
-- Exit intent
-
-### Countdown Timer Dinâmico
-
-```javascript
-// Definir data específica
-BABIA.Countdown.init(element, '2024-12-31 23:59:59');
-
-// Ou final do dia atual (padrão)
-BABIA.Countdown.init(element);
-```
-
-## 📊 Métricas Esperadas
-
-### Page Speed
-- **Página 1**: ~3-4s (muitas animações)
-- **Página 2**: ~2-3s (imagens otimizadas)  
-- **Página 3**: ~1-2s (minimalista)
-
-### Conversão
-- **Página 1**: Impressionar → compra impulsiva
-- **Página 2**: Convencer → compra emocional
-- **Página 3**: Converter → compra racional
-
-## 🐛 Troubleshooting
-
-### Imagens não aparecem
-- ✅ Verificar se todas as imagens foram extraídas
-- ✅ Verificar paths relativos nos HTML
-- ✅ Verificar permissões do servidor
-
-### Animações não funcionam
-- ✅ Verificar se JavaScript está ativo
-- ✅ Testar em browser diferente
-- ✅ Verificar console para erros
-
-### Performance lenta
-- ✅ Comprimir imagens
-- ✅ Ativar GZIP no servidor
-- ✅ Usar CDN para assets
-- ✅ Minificar CSS/JS
-
-## 📋 Checklist de Lançamento
-
-### Antes do Go-Live
-- [ ] Todas as imagens extraídas e otimizadas
-- [ ] Analytics configurados
-- [ ] Links de checkout funcionais
-- [ ] Testado em Chrome, Firefox, Safari
-- [ ] Testado em mobile e desktop
-- [ ] Velocidade de carregamento < 3s
-- [ ] SEO meta tags verificadas
-- [ ] Formulários testados
-
-### Após o Lançamento
-- [ ] Monitorar analytics
-- [ ] Testar taxa de conversão
-- [ ] Otimizar baseado em dados
-- [ ] A/B test diferentes versões
-- [ ] Coletar feedback dos usuários
-
-## 🔗 Links Úteis
-
-- **Página Original**: https://www.isabeldigitall.pt/babia/
-- **Instagram**: @isabeldigitall
-- **Inspiração Lunae**: https://lunaeacademy-formacoes.com/sp/workshop-jesmonite/
-
-## 💡 Próximos Passos
-
-1. **Extrair todos os assets** da página original
-2. **Escolher a página** que melhor se adequa ao público
-3. **Implementar no WordPress** usando Elementor
-4. **Configurar tracking** e analytics
-5. **Fazer testes A/B** para otimizar conversão
-6. **Monitorar métricas** e ajustar conforme necessário
-
-## 📞 Suporte
-
-Para questões sobre implementação:
-1. Verificar este README
-2. Consultar `docs/assets-instructions.md`
-3. Verificar comentários no código HTML
-4. Testar em ambiente local primeiro
-
----
-
-**🎯 Objetivo**: Aumentar a conversão do curso BABIA através de landing pages otimizadas e profissionais.
-
-**🚀 Resultado Esperado**: Páginas que convertem visitantes em alunas do curso BABIA, cada uma com abordagem diferente mas todas alinhadas com a marca da Isabel Digital.
+Para questões sobre o projeto, contactar Isabel Digital através do Instagram @isabeldigitall
