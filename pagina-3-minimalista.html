@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABIA - 3 Horas que Mudam Tudo | Isabel Digital</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Domina IA em 3 horas. 100+ alunas satisfeitas. 30 dias de garantia. De 97€ por 67€.">
+    <meta name="keywords" content="curso IA, inteligência artificial, gestora redes sociais, portugal">
+    <meta name="author" content="Isabel Digital">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="BABIA - 3 Horas que Mudam Tudo">
+    <meta property="og:description" content="Curso prático de IA para gestoras. Resultados garantidos em 30 dias.">
+    <meta property="og:image" content="assets/original/isabel-main.jpg">
+    <meta property="og:url" content="https://www.isabeldigitall.pt/babia/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
+    <!-- System Fonts for Maximum Speed -->
+    <style>
+        /* Variables */
+        :root {
+            --primary: #d90368;
+            --success: #00c851;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--white);
+            color: var(--dark);
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .text-center { text-align: center; }
+        .text-bold { font-weight: 700; }
+        .text-large { font-size: 24px; }
+        .text-xl { font-size: 32px; }
+        .text-xxl { font-size: 48px; }
+        .text-primary { color: var(--primary); }
+        .text-success { color: var(--success); }
+        .text-gray { color: var(--gray); }
+
+        .mb-1 { margin-bottom: 10px; }
+        .mb-2 { margin-bottom: 20px; }
+        .mb-3 { margin-bottom: 30px; }
+        .mb-4 { margin-bottom: 40px; }
+        .mb-5 { margin-bottom: 50px; }
+
+        .mt-1 { margin-top: 10px; }
+        .mt-2 { margin-top: 20px; }
+        .mt-3 { margin-top: 30px; }
+        .mt-4 { margin-top: 40px; }
+        .mt-5 { margin-top: 50px; }
+
+        .py-3 { padding: 30px 0; }
+        .py-4 { padding: 40px 0; }
+        .py-5 { padding: 50px 0; }
+
+        /* Countdown Timer (Fixed Top) */
+        .countdown-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .countdown-timer {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 10px;
+            border-radius: 4px;
+            min-width: 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            background: var(--white);
+        }
+
+        .hero-title {
+            font-size: clamp(40px, 8vw, 80px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            color: var(--dark);
+        }
+
+        .hero-video {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--light-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: var(--primary);
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+
+        .cta-primary {
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+            background: var(--primary);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+        }
+
+        .cta-primary:hover {
+            background: #c70053;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--light-gray);
+            padding: 30px 0;
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-number {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--primary);
+            display: block;
+        }
+
+        .trust-label {
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Problem/Solution Section */
+        .comparison {
+            padding: 60px 0;
+        }
+
+        .comparison-table {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .comparison-column h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .comparison-column.problem h3 {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .comparison-column.solution h3 {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .comparison-list {
+            list-style: none;
+        }
+
+        .comparison-list li {
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .comparison-list li:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .comparison-icon.negative {
+            color: #dc3545;
+        }
+
+        .comparison-icon.positive {
+            color: var(--success);
+        }
+
+        /* Modules Section */
+        .modules {
+            background: var(--light-gray);
+            padding: 60px 0;
+        }
+
+        .modules-title {
+            font-size: 42px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .modules-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .module-item {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .module-number {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .module-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .module-duration {
+            font-size: 16px;
+            color: var(--gray);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .module-list {
+            list-style: none;
+        }
+
+        .module-list li {
+            padding: 8px 0;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .module-list li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 60px 0;
+        }
+
+        .testimonials-title {
+            font-size: 42px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: var(--light-gray);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: var(--primary);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .testimonial-image:hover {
+            transform: scale(1.05);
+        }
+
+        .social-proof {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .rating {
+            font-size: 32px;
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+
+        .rating-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--gray);
+        }
+
+        /* Offer Section */
+        .offer {
+            background: var(--light-gray);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .offer-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .price-container {
+            margin: 40px 0;
+        }
+
+        .price-old {
+            font-size: 32px;
+            color: var(--gray);
+            text-decoration: line-through;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .price-new {
+            font-size: 80px;
+            font-weight: 900;
+            color: var(--success);
+            display: block;
+            line-height: 1;
+        }
+
+        .savings {
+            font-size: 20px;
+            color: var(--primary);
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .payment-icon {
+            font-size: 40px;
+        }
+
+        /* Guarantee Section */
+        .guarantee {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .guarantee-text {
+            font-size: 20px;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .guarantee-highlight {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: var(--primary);
+            padding: 15px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+        }
+
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--primary);
+            background: white;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .sticky-cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-text {
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+
+        /* Modal for Testimonial Images */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 48px;
+            }
+
+            .trust-items {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .comparison-table {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .price-new {
+                font-size: 60px;
+            }
+
+            .payment-options {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cta-primary {
+                padding: 15px 30px;
+                font-size: 20px;
+            }
+
+            .countdown-timer {
+                font-size: 14px;
+            }
+
+            .countdown-item {
+                padding: 3px 6px;
+                min-width: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 36px;
+            }
+
+            .text-xxl {
+                font-size: 36px;
+            }
+
+            .text-xl {
+                font-size: 24px;
+            }
+
+            .modules-title,
+            .testimonials-title,
+            .offer-title {
+                font-size: 32px;
+            }
+        }
+
+        /* A/B Test Ready Classes */
+        .version-a .cta-primary {
+            background: var(--primary);
+        }
+
+        .version-b .cta-primary {
+            background: var(--success);
+        }
+
+        .version-a .price-new {
+            color: var(--primary);
+        }
+
+        .version-b .price-new {
+            color: var(--success);
+        }
+
+        /* Performance Optimizations */
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+
+        /* No-JS Fallback */
+        .no-js .sticky-cta {
+            position: relative;
+            transform: none;
+        }
+
+        .no-js .countdown-bar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="version-a">
+    <!-- Countdown Timer (Fixed Top) -->
+    <div class="countdown-bar">
+        <div class="countdown-timer">
+            <span>⏰ OFERTA TERMINA EM:</span>
+            <div class="countdown-item" id="hours">23</div>
+            <span>:</span>
+            <div class="countdown-item" id="minutes">59</div>
+            <span>:</span>
+            <div class="countdown-item" id="seconds">59</div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="hero-title">
+                Domina IA em<br>
+                <span class="text-primary">3 Horas</span>
+            </h1>
+            
+            <div class="hero-video">
+                <div class="video-placeholder">
+                    <!-- Inserir vídeo da Isabel aqui -->
+                    ▶️
+                </div>
+            </div>
+            
+            <a href="#comprar" class="cta-primary">QUERO ACESSO AGORA</a>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <span class="trust-number">3</span>
+                    <span class="trust-label">Horas de Conteúdo</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">100+</span>
+                    <span class="trust-label">Alunas Satisfeitas</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">30</span>
+                    <span class="trust-label">Dias de Garantia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem vs Solution -->
+    <section class="comparison">
+        <div class="container">
+            <h2 class="text-center text-xxl text-bold mb-5">Sem IA vs Com IA</h2>
+            <div class="comparison-table">
+                <div class="comparison-column problem">
+                    <h3>Sem IA (Como Estás Agora)</h3>
+                    <ul class="comparison-list">
+                        <li>
+                            <span class="comparison-icon negative">❌</span>
+                            Passas horas a criar conteúdo
+                        </li>
+                        <li>
+                            <span class="comparison-icon negative">❌</span>
+                            Trabalhas fins de semana
+                        </li>
+                        <li>
+                            <span class="comparison-icon negative">❌</span>
+                            Cobras preços baixos
+                        </li>
+                        <li>
+                            <span class="comparison-icon negative">❌</span>
+                            Sentes-te sempre atrasada
+                        </li>
+                        <li>
+                            <span class="comparison-icon negative">❌</span>
+                            Stress constante
+                        </li>
+                    </ul>
+                </div>
+                <div class="comparison-column solution">
+                    <h3>Com IA (Em 30 Dias)</h3>
+                    <ul class="comparison-list">
+                        <li>
+                            <span class="comparison-icon positive">✅</span>
+                            Crias conteúdo em minutos
+                        </li>
+                        <li>
+                            <span class="comparison-icon positive">✅</span>
+                            Fins de semana livres
+                        </li>
+                        <li>
+                            <span class="comparison-icon positive">✅</span>
+                            Cobras o dobro
+                        </li>
+                        <li>
+                            <span class="comparison-icon positive">✅</span>
+                            Estás sempre à frente
+                        </li>
+                        <li>
+                            <span class="comparison-icon positive">✅</span>
+                            Vida equilibrada
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules -->
+    <section class="modules">
+        <div class="container">
+            <h2 class="modules-title">O Que Vais Aprender</h2>
+            <div class="modules-list">
+                <div class="module-item">
+                    <div class="module-number">MÓDULO 1</div>
+                    <h3 class="module-title">Fundamentos da IA</h3>
+                    <div class="module-duration">⏱️ 1 hora</div>
+                    <ul class="module-list">
+                        <li>Configurar ChatGPT e ferramentas essenciais</li>
+                        <li>Primeiros prompts que funcionam</li>
+                        <li>Resultados imediatos em 24h</li>
+                    </ul>
+                </div>
+                <div class="module-item">
+                    <div class="module-number">MÓDULO 2</div>
+                    <h3 class="module-title">IA para Conteúdo</h3>
+                    <div class="module-duration">⏱️ 1 hora</div>
+                    <ul class="module-list">
+                        <li>Criar posts virais automaticamente</li>
+                        <li>Calendário editorial que se faz sozinho</li>
+                        <li>Copys que convertem em vendas</li>
+                    </ul>
+                </div>
+                <div class="module-item">
+                    <div class="module-number">MÓDULO 3</div>
+                    <h3 class="module-title">Estratégias Avançadas</h3>
+                    <div class="module-duration">⏱️ 1 hora</div>
+                    <ul class="module-list">
+                        <li>Automações que poupam 20h/semana</li>
+                        <li>Como cobrar 2x mais com IA</li>
+                        <li>Escalar sem limites</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="testimonials-title">Prova Social</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-image" onclick="openModal('modal1')">
+                    📱
+                </div>
+                <div class="testimonial-image" onclick="openModal('modal2')">
+                    📱
+                </div>
+                <div class="testimonial-image" onclick="openModal('modal3')">
+                    📱
+                </div>
+                <div class="testimonial-image" onclick="openModal('modal4')">
+                    📱
+                </div>
+                <div class="testimonial-image" onclick="openModal('modal5')">
+                    📱
+                </div>
+                <div class="testimonial-image" onclick="openModal('modal6')">
+                    📱
+                </div>
+            </div>
+            <div class="social-proof">
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="rating-text">100+ alunas satisfeitas</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="offer" id="comprar">
+        <div class="container">
+            <h2 class="offer-title">Oferta Especial</h2>
+            <div class="price-container">
+                <span class="price-old">97€</span>
+                <span class="price-new">67€</span>
+            </div>
+            <div class="savings">Poupa 30€ hoje</div>
+            
+            <a href="#checkout" class="cta-primary">COMPRAR AGORA</a>
+            
+            <div class="payment-options">
+                <span class="payment-icon">💳</span>
+                <span class="payment-icon">🅿️</span>
+                <span class="payment-icon">📱</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="guarantee">
+        <div class="container">
+            <p class="guarantee-text">
+                <span class="guarantee-highlight">Garantia de 30 dias.</span> 
+                Se não estiveres satisfeita, devolvemos 100% do teu dinheiro.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Termos</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-text">
+                &copy; 2024 Isabel Digital. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="#comprar" class="sticky-cta-button">COMPRAR POR 67€</a>
+    </div>
+
+    <!-- Modals for Testimonials -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-image" style="background: #f0f0f0; width: 400px; height: 600px; display: flex; align-items: center; justify-content: center; font-size: 60px; color: var(--primary);">
+                Testemunho 1
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-image" style="background: #f0f0f0; width: 400px; height: 600px; display: flex; align-items: center; justify-content: center; font-size: 60px; color: var(--primary);">
+                Testemunho 2
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-image" style="background: #f0f0f0; width: 400px; height: 600px; display: flex; align-items: center; justify-content: center; font-size: 60px; color: var(--primary);">
+                Testemunho 3
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="modal-image" style="background: #f0f0f0; width: 400px; height: 600px; display: flex; align-items: center; justify-content: center; font-size: 60px; color: var(--primary);">
+                Testemunho 4
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <div class="modal-image" style="background: #f0f0f0; width: 400px; height: 600px; display: flex; align-items: center; justify-content: center; font-size: 60px; color: var(--primary);">
+                Testemunho 5
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <div class="modal-image" style="background: #f0f0f0; width: 400px; height: 600px; display: flex; align-items: center; justify-content: center; font-size: 60px; color: var(--primary);">
+                Testemunho 6
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript (Vanilla, No Libraries) -->
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            
+            const diff = midnight - now;
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Sticky CTA
+        function handleStickyGTA() {
+            const scrollY = window.scrollY;
+            const stickyCta = document.getElementById('stickyCta');
+            const offerSection = document.querySelector('.offer');
+            const offerTop = offerSection.offsetTop;
+            
+            if (scrollY > 500 && scrollY < offerTop - 100) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        }
+
+        window.addEventListener('scroll', handleStickyGTA);
+
+        // Modal Functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 60; // Account for fixed countdown bar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // A/B Testing Helper
+        function setTestVersion(version) {
+            document.body.className = `version-${version}`;
+            localStorage.setItem('ab-test-version', version);
+        }
+
+        // Initialize A/B test version
+        const savedVersion = localStorage.getItem('ab-test-version');
+        if (!savedVersion) {
+            const version = Math.random() > 0.5 ? 'a' : 'b';
+            setTestVersion(version);
+        } else {
+            setTestVersion(savedVersion);
+        }
+
+        // Performance: Lazy load testimonial images
+        function lazyLoadImages() {
+            const images = document.querySelectorAll('.testimonial-image[data-src]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.style.backgroundImage = `url(${img.dataset.src})`;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            images.forEach(img => imageObserver.observe(img));
+        }
+
+        // Event Tracking for Analytics
+        function trackEvent(action, element) {
+            // Google Analytics Event Tracking
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    'event_category': 'engagement',
+                    'event_label': element
+                });
+            }
+            
+            // Facebook Pixel Event Tracking
+            if (typeof fbq !== 'undefined') {
+                fbq('track', action, { element: element });
+            }
+            
+            console.log(`Event tracked: ${action} - ${element}`);
+        }
+
+        // Track CTA clicks
+        document.querySelectorAll('.cta-primary, .sticky-cta-button').forEach(cta => {
+            cta.addEventListener('click', () => {
+                trackEvent('cta_click', cta.textContent.trim());
+            });
+        });
+
+        // Track video play (when video element is added)
+        document.addEventListener('play', function(e) {
+            if (e.target.tagName === 'VIDEO') {
+                trackEvent('video_play', 'hero_video');
+            }
+        }, true);
+
+        // Track testimonial views
+        document.querySelectorAll('.testimonial-image').forEach((testimonial, index) => {
+            testimonial.addEventListener('click', () => {
+                trackEvent('testimonial_view', `testimonial_${index + 1}`);
+            });
+        });
+
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            lazyLoadImages();
+            
+            // Track page view
+            trackEvent('page_view', 'minimal_landing');
+            
+            // Performance optimization: Preload critical resources
+            const criticalImages = [
+                'assets/original/isabel-main.jpg',
+                'assets/original/testemunho-1.jpg'
+            ];
+            
+            criticalImages.forEach(src => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
+            });
+        });
+
+        // Service Worker for offline support (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+
+        // Critical CSS loading optimization
+        function loadCSS(href) {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = href;
+            link.media = 'print';
+            link.onload = function() { this.media = 'all'; };
+            document.head.appendChild(link);
+        }
+
+        // Load non-critical CSS after page load
+        window.addEventListener('load', () => {
+            // loadCSS('assets/css/non-critical.css');
+        });
+
+        // Error tracking
+        window.addEventListener('error', (e) => {
+            console.error('JavaScript Error:', e.error);
+            trackEvent('javascript_error', e.error.message);
+        });
+
+        // Form validation (if forms are added later)
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // Exit intent detection
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY <= 0) {
+                trackEvent('exit_intent', 'top_of_page');
+                // Could trigger exit intent popup here
+            }
+        });
+
+        // Scroll depth tracking
+        let maxScroll = 0;
+        window.addEventListener('scroll', () => {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            if (scrollPercent > maxScroll) {
+                maxScroll = scrollPercent;
+                if (scrollPercent >= 25 && maxScroll < 50) {
+                    trackEvent('scroll_depth', '25_percent');
+                } else if (scrollPercent >= 50 && maxScroll < 75) {
+                    trackEvent('scroll_depth', '50_percent');
+                } else if (scrollPercent >= 75 && maxScroll < 90) {
+                    trackEvent('scroll_depth', '75_percent');
+                } else if (scrollPercent >= 90) {
+                    trackEvent('scroll_depth', '90_percent');
+                }
+            }
+        });
+
+        // Time on page tracking
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', () => {
+            const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+            trackEvent('time_on_page', `${timeOnPage}_seconds`);
+        });
+    </script>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "BABIA - Bê-à-Bá da Inteligência Artificial",
+        "description": "Curso prático de 3 horas para dominar IA",
+        "provider": {
+            "@type": "Organization",
+            "name": "Isabel Digital",
+            "url": "https://www.isabeldigitall.pt"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "67",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2024-01-01",
+            "priceValidUntil": "2024-12-31"
+        },
+        "duration": "PT3H",
+        "courseMode": "online",
+        "educationalLevel": "beginner",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "100"
+        }
+    }
+    </script>
+
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+
+    <!-- Facebook Pixel Placeholder -->
+    <!-- 
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+    -->
+
+    <!-- Google Analytics Placeholder -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_GA_ID');
+    </script>
+    -->
+</body>
+</html>

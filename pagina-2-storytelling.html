@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tua Jornada com IA Começa Aqui - BABIA | Isabel Digital</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Descobre como 3 horas podem transformar a tua vida profissional. A Isabel ensina-te a usar IA de forma simples e prática.">
+    <meta name="keywords" content="transformação pessoal, IA para mulheres, curso online feminino, gestora redes sociais">
+    <meta name="author" content="Isabel Digital">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="A Tua Transformação com IA Começa Hoje">
+    <meta property="og:description" content="Junta-te a +100 gestoras que já mudaram as suas vidas com IA. A história da Isabel pode ser a tua.">
+    <meta property="og:image" content="assets/original/isabel-main.jpg">
+    <meta property="og:url" content="https://www.isabeldigitall.pt/babia/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Variables */
+        :root {
+            --primary: #d90368;
+            --primary-light: #ff4d8f;
+            --primary-dark: #c70053;
+            --secondary: #ff9f40;
+            --tertiary: #ffd700;
+            --warm-white: #fff5f5;
+            --warm-gray: #f8f4f0;
+            --text-dark: #2d1810;
+            --text-light: #6d4c3d;
+            --shadow-soft: 0 10px 30px rgba(217, 3, 104, 0.15);
+            --shadow-hover: 0 20px 40px rgba(217, 3, 104, 0.25);
+            --gradient-warm: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+            --gradient-hero: linear-gradient(135deg, #d90368 0%, #ff4d8f 50%, #ff9f40 100%);
+        }
+
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--warm-white);
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .script-font {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            z-index: 10000;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--gradient-hero);
+            width: 0%;
+            transition: width 0.3s ease;
+            position: relative;
+        }
+
+        .progress-heart {
+            position: absolute;
+            right: -10px;
+            top: -8px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            transform: rotate(45deg);
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .progress-heart::before,
+        .progress-heart::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .progress-heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .progress-heart::after {
+            top: 0;
+            left: -10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--gradient-warm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23d90368" opacity="0.1"/><circle cx="80" cy="40" r="3" fill="%23ff9f40" opacity="0.1"/><circle cx="40" cy="70" r="2" fill="%23d90368" opacity="0.1"/><circle cx="70" cy="10" r="1" fill="%23ff4d8f" opacity="0.1"/></svg>') repeat;
+            animation: float-bg 20s ease-in-out infinite;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            z-index: 10;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+        }
+
+        .hero-highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            position: relative;
+            text-align: center;
+        }
+
+        .isabel-frame {
+            position: relative;
+            display: inline-block;
+            padding: 1rem;
+            background: var(--gradient-hero);
+            border-radius: 20px;
+            transform: rotate(-2deg);
+            animation: gentle-float 6s ease-in-out infinite;
+        }
+
+        .isabel-photo {
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-heart {
+            position: absolute;
+            font-size: 1.5rem;
+            color: var(--primary);
+            opacity: 0.7;
+            animation: float-heart 8s linear infinite;
+        }
+
+        .hero-video {
+            width: 100%;
+            max-width: 500px;
+            margin: 2rem auto 0;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-video:hover {
+            transform: perspective(1000px) rotateY(0deg) scale(1.05);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            background: var(--gradient-hero);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-hero);
+            border-radius: 2px;
+        }
+
+        /* Pain Section */
+        .pain-section {
+            background: var(--warm-gray);
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pain-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(217, 3, 104, 0.1);
+        }
+
+        .pain-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary);
+        }
+
+        .pain-emoji {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            filter: grayscale(0.3);
+        }
+
+        .pain-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .pain-description {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Dream Section */
+        .dream-section {
+            background: linear-gradient(135deg, var(--warm-white) 0%, #fff8f0 100%);
+            position: relative;
+        }
+
+        .dream-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,50 Q50,20 80,50 T20,50" stroke="%23d90368" stroke-width="0.5" fill="none" opacity="0.1"/></svg>') repeat;
+            pointer-events: none;
+        }
+
+        .dream-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .dream-text {
+            z-index: 10;
+        }
+
+        .dream-subtitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .dream-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .dream-list li {
+            padding: 1rem 0;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .dream-list li::before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .dream-list li:hover {
+            color: var(--primary);
+            transform: translateX(10px);
+        }
+
+        .dream-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            position: relative;
+        }
+
+        .dream-image {
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dream-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-hero);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .dream-image:hover::before {
+            opacity: 0.8;
+        }
+
+        .dream-image:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        /* Story Section */
+        .story-section {
+            background: white;
+        }
+
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .story-quote {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .story-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .story-image {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            border-radius: 50%;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .story-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .story-stat {
+            text-align: center;
+        }
+
+        .story-stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .story-stat-label {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        /* Journey Section */
+        .journey-section {
+            background: var(--gradient-warm);
+        }
+
+        .journey-path {
+            position: relative;
+            margin-top: 3rem;
+        }
+
+        .journey-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+
+        .journey-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .journey-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .journey-icon {
+            width: 120px;
+            height: 120px;
+            background: var(--gradient-hero);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            margin: 0 2rem;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .journey-icon::before {
+            content: '';
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: pulse-ring 2s infinite;
+        }
+
+        .journey-content {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .journey-number {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .journey-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .journey-description {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background: white;
+            overflow: hidden;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--warm-gray);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px) rotate(1deg);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .testimonial-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+            position: relative;
+        }
+
+        .testimonial-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(217, 3, 104, 0.9));
+            color: white;
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover .testimonial-overlay {
+            transform: translateY(0);
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-result {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Community Section */
+        .community-section {
+            background: var(--gradient-warm);
+            text-align: center;
+        }
+
+        .community-image {
+            width: 400px;
+            height: 250px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            border-radius: 20px;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .community-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .community-feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .community-feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--secondary) 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>') repeat;
+            animation: rotate-bg 60s linear infinite;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-subtitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .price-container {
+            margin: 2rem 0;
+        }
+
+        .price-old {
+            font-size: 1.8rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-new {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            text-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+
+        .price-savings {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .cta-final {
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--primary);
+            background: white;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-top: 2rem;
+        }
+
+        .cta-final:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .guarantee-text {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--warm-gray);
+        }
+
+        .faq-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-intro-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--warm-gray);
+            color: var(--primary);
+        }
+
+        .faq-answer {
+            padding: 0 2rem 1.5rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Animations */
+        @keyframes heartbeat {
+            0%, 100% { transform: rotate(45deg) scale(1); }
+            50% { transform: rotate(45deg) scale(1.2); }
+        }
+
+        @keyframes gentle-float {
+            0%, 100% { transform: rotate(-2deg) translateY(0px); }
+            50% { transform: rotate(-2deg) translateY(-20px); }
+        }
+
+        @keyframes float-bg {
+            0%, 100% { transform: translateX(0) translateY(0); }
+            33% { transform: translateX(-20px) translateY(-10px); }
+            66% { transform: translateX(10px) translateY(-20px); }
+        }
+
+        @keyframes float-heart {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-200px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        @keyframes rotate-bg {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .isabel-frame {
+                transform: rotate(0deg);
+            }
+
+            .isabel-photo {
+                width: 300px;
+                height: 350px;
+            }
+
+            .dream-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .dream-gallery {
+                order: -1;
+            }
+
+            .journey-item {
+                flex-direction: column !important;
+                text-align: center;
+            }
+
+            .journey-icon {
+                margin: 0 0 1rem 0;
+            }
+
+            .story-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .community-features {
+                grid-template-columns: 1fr;
+            }
+
+            .price-new {
+                font-size: 3rem;
+            }
+        }
+
+        /* Music Player */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-hero);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .music-player:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .music-player.playing {
+            animation: music-pulse 1.5s infinite;
+        }
+
+        @keyframes music-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-heart"></div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" onclick="toggleMusic()">
+        <span id="music-icon">🎵</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <div class="hero-subtitle">Olá, sou a Isabel e sei exatamente como te sentes...</div>
+                <h1 class="hero-title">
+                    Não deixes que a <span class="hero-highlight">tecnologia</span><br>
+                    te ultrapasse.<br>
+                    <span class="script-font">És capaz de muito mais.</span>
+                </h1>
+                <p class="hero-description">
+                    Se sentes que estás sempre a correr atrás dos outros, se perdes horas em tarefas que podiam ser automáticas, 
+                    e se sonhas em trabalhar menos mas ganhar mais... esta é a tua oportunidade de mudança.
+                </p>
+                <a href="#transformacao" class="cta-button">Quero Mudar a Minha Vida</a>
+            </div>
+            <div class="hero-image slide-in-right">
+                <div class="isabel-frame">
+                    <div class="isabel-photo">
+                        <!-- Placeholder para foto da Isabel -->
+                        👩‍💼
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-heart" style="top: 10%; left: 20%; animation-delay: 0s;">💕</div>
+                    <div class="floating-heart" style="top: 30%; right: 15%; animation-delay: 2s;">✨</div>
+                    <div class="floating-heart" style="bottom: 40%; left: 10%; animation-delay: 4s;">💫</div>
+                    <div class="floating-heart" style="bottom: 20%; right: 25%; animation-delay: 6s;">🌟</div>
+                </div>
+                <div class="hero-video">
+                    <div class="video-placeholder">
+                        <!-- Inserir vídeo da Isabel aqui -->
+                        ▶️
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Section -->
+    <section class="section pain-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in">Sentes-te Assim?</h2>
+            <div class="pain-grid">
+                <div class="pain-card fade-in">
+                    <span class="pain-emoji">😰</span>
+                    <h3 class="pain-title">Acordas Cansada Pensando em Todo o Conteúdo</h3>
+                    <p class="pain-description">
+                        Mais um dia, mais posts para criar, mais copys para escrever. 
+                        Parece que nunca tens tempo suficiente e o stress é constante.
+                    </p>
+                </div>
+                <div class="pain-card fade-in">
+                    <span class="pain-emoji">😔</span>
+                    <h3 class="pain-title">Vês Outras Gestoras a Cobrar o Dobro</h3>
+                    <p class="pain-description">
+                        Enquanto tu passas horas no mesmo projeto, outras entregam mais rápido, 
+                        cobram mais e ainda têm tempo para a família.
+                    </p>
+                </div>
+                <div class="pain-card fade-in">
+                    <span class="pain-emoji">😟</span>
+                    <h3 class="pain-title">Sentes que Estás Sempre Atrasada</h3>
+                    <p class="pain-description">
+                        A tecnologia avança tão rápido que te sentes perdida. 
+                        E se os teus clientes descobrirem alguém mais eficiente?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dream Section -->
+    <section class="section dream-section">
+        <div class="section-container">
+            <div class="dream-content">
+                <div class="dream-text slide-in-left">
+                    <div class="dream-subtitle">Agora imagina se...</div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                        A Tua Vida Fosse Completamente Diferente
+                    </h2>
+                    <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2rem;">
+                        E se pudesses trabalhar apenas 4 horas por dia e ganhar o dobro? 
+                        E se os clientes te procurassem a ti porque sabem que entregas resultados extraordinários?
+                    </p>
+                    <ul class="dream-list">
+                        <li>Criar conteúdo para 1 mês numa só manhã</li>
+                        <li>Ter tempo de qualidade com a família</li>
+                        <li>Ser reconhecida como expert na tua área</li>
+                        <li>Faturar o dobro com metade do esforço</li>
+                        <li>Dormir tranquila sabendo que tudo está organizado</li>
+                    </ul>
+                </div>
+                <div class="dream-gallery slide-in-right">
+                    <div class="dream-image">🏖️</div>
+                    <div class="dream-image">👨‍👩‍👧‍👦</div>
+                    <div class="dream-image">💰</div>
+                    <div class="dream-image">🏆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section story-section">
+        <div class="section-container">
+            <div class="story-content fade-in">
+                <h2 class="section-title">A Minha História</h2>
+                <div class="story-quote">
+                    "Em 2023 descobri que estava a trabalhar como uma máquina quando podia trabalhar COM máquinas..."
+                </div>
+                <div class="story-image">👩‍💻</div>
+                <p class="story-text">
+                    Era exatamente como tu. Passava horas a criar conteúdo, sentia-me sempre atrasada e via outras pessoas 
+                    a conseguir melhores resultados com menos esforço. Até que descobri o poder da Inteligência Artificial.
+                </p>
+                <p class="story-text">
+                    Não foi fácil no início. Tinha medo de não conseguir, de ser complicado demais. Mas quando vi os 
+                    primeiros resultados... mudou tudo. Em 30 dias estava a trabalhar metade das horas e a faturar o dobro.
+                </p>
+                <p class="story-text">
+                    Hoje ajudo gestoras como tu a fazerem a mesma transformação. Sem complicações, sem tecnicismos, 
+                    apenas resultados práticos que funcionam desde o primeiro dia.
+                </p>
+                <div class="story-stats">
+                    <div class="story-stat fade-in">
+                        <span class="story-stat-number">100+</span>
+                        <span class="story-stat-label">Alunas Formadas</span>
+                    </div>
+                    <div class="story-stat fade-in">
+                        <span class="story-stat-number">3x</span>
+                        <span class="story-stat-label">Aumento Médio de Produtividade</span>
+                    </div>
+                    <div class="story-stat fade-in">
+                        <span class="story-stat-number">30</span>
+                        <span class="story-stat-label">Dias para Ver Resultados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="section journey-section" id="transformacao">
+        <div class="section-container">
+            <h2 class="section-title fade-in">O Teu Percurso de Transformação</h2>
+            <div class="journey-path">
+                <div class="journey-item">
+                    <div class="journey-icon">🌱</div>
+                    <div class="journey-content">
+                        <div class="journey-number">Módulo 1</div>
+                        <h3 class="journey-title">Despertar para a IA</h3>
+                        <p class="journey-description">
+                            Vais descobrir como a IA pode transformar o teu dia a dia. Sem complicações, sem medo. 
+                            Apenas ferramentas simples que funcionam imediatamente. Em 24 horas já vais ver os primeiros resultados.
+                        </p>
+                    </div>
+                </div>
+                <div class="journey-item">
+                    <div class="journey-icon">🚀</div>
+                    <div class="journey-content">
+                        <div class="journey-number">Módulo 2</div>
+                        <h3 class="journey-title">Criação de Conteúdo Mágica</h3>
+                        <p class="journey-description">
+                            Aprende a criar conteúdo viral que gera engagement automático. Posts que convertem, 
+                            calendários que se organizam sozinhos, copys que vendem enquanto dormes.
+                        </p>
+                    </div>
+                </div>
+                <div class="journey-item">
+                    <div class="journey-icon">💎</div>
+                    <div class="journey-content">
+                        <div class="journey-number">Módulo 3</div>
+                        <h3 class="journey-title">Maestria Total</h3>
+                        <p class="journey-description">
+                            Domina as estratégias avançadas que te permitem escalar infinitamente. 
+                            Sistemas que trabalham por ti, automações que poupam 20h por semana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in">Elas Conseguiram, Tu Também Vais</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-image">
+                        <!-- Placeholder para testemunho 1 -->
+                        📱
+                        <div class="testimonial-overlay">
+                            <div class="testimonial-name">Maria Santos</div>
+                            <div class="testimonial-result">"Dobrei o faturamento em 2 meses"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-image">
+                        <!-- Placeholder para testemunho 2 -->
+                        📱
+                        <div class="testimonial-overlay">
+                            <div class="testimonial-name">Ana Costa</div>
+                            <div class="testimonial-result">"Trabalho 4h por dia agora"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-image">
+                        <!-- Placeholder para testemunho 3 -->
+                        📱
+                        <div class="testimonial-overlay">
+                            <div class="testimonial-name">Carla Oliveira</div>
+                            <div class="testimonial-result">"Clientes impressionados com a qualidade"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-image">
+                        <!-- Placeholder para testemunho 4 -->
+                        📱
+                        <div class="testimonial-overlay">
+                            <div class="testimonial-name">Sofia Pereira</div>
+                            <div class="testimonial-result">"Melhor investimento que já fiz"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-image">
+                        <!-- Placeholder para testemunho 5 -->
+                        📱
+                        <div class="testimonial-overlay">
+                            <div class="testimonial-name">Rita Fernandes</div>
+                            <div class="testimonial-result">"IA mudou completamente o meu negócio"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-image">
+                        <!-- Placeholder para testemunho 6 -->
+                        📱
+                        <div class="testimonial-overlay">
+                            <div class="testimonial-name">Joana Silva</div>
+                            <div class="testimonial-result">"Finalmente tenho tempo para mim"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="section community-section">
+        <div class="section-container">
+            <h2 class="section-title fade-in">Não Estás Sozinha</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--text-light); max-width: 600px; margin: 0 auto 2rem;">
+                Junta-te a uma comunidade de mulheres determinadas a transformar os seus negócios. 
+                Apoio, partilha e crescimento mútuo.
+            </p>
+            <div class="community-image fade-in">👥</div>
+            <div class="community-features">
+                <div class="community-feature fade-in">
+                    <span class="community-feature-icon">💬</span>
+                    <h3>Grupo WhatsApp VIP</h3>
+                    <p>Suporte direto comigo e networking com outras gestoras de sucesso.</p>
+                </div>
+                <div class="community-feature fade-in">
+                    <span class="community-feature-icon">🤝</span>
+                    <h3>Mentoria Contínua</h3>
+                    <p>Não ficas sozinha após o curso. Acompanhamento permanente na tua jornada.</p>
+                </div>
+                <div class="community-feature fade-in">
+                    <span class="community-feature-icon">🎯</span>
+                    <h3>Resultados Partilhados</h3>
+                    <p>Celebramos juntas cada vitória, cada cliente novo, cada meta alcançada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title fade-in">Este é o Teu Momento</h2>
+                <div class="cta-subtitle fade-in">Investe na mulher que queres ser</div>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;" class="fade-in">
+                    3 horas de conteúdo que transformam a tua vida profissional para sempre. 
+                    Método simples, resultados extraordinários.
+                </p>
+                <div class="price-container fade-in">
+                    <span class="price-old">De 97€</span>
+                    <span class="price-new">67€</span>
+                    <div class="price-savings">Poupa 30€ + 397€ em Bónus Grátis</div>
+                </div>
+                <a href="#checkout" class="cta-final">SIM, QUERO TRANSFORMAR A MINHA VIDA</a>
+                <div class="guarantee-text fade-in">
+                    💎 Garantia Total de 30 Dias - Se não estiveres completamente satisfeita, devolvemos 100% do teu investimento
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="section-container">
+            <div class="faq-intro fade-in">
+                <div class="faq-intro-text">Sei que tens dúvidas, é completamente normal...</div>
+                <h2 class="section-title">Deixa-me Esclarecer Tudo</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Tenho zero conhecimento de tecnologia. Vou conseguir?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Claro que sim! O BABIA foi criado especialmente para pessoas como tu. Explico tudo de forma simples, 
+                        sem tecnicismos. Se sabes usar o Instagram, vais conseguir usar IA.
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Quanto tempo preciso para ver resultados?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        As minhas alunas começam a poupar tempo logo no primeiro dia. Em 30 dias, já estão completamente 
+                        transformadas e a trabalhar de forma muito mais eficiente.
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>E se não funcionar para o meu nicho?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        A IA funciona para qualquer área! Beleza, moda, comida, fitness, coaching... Os princípios são os mesmos. 
+                        E se tiveres dúvidas, estou sempre disponível no grupo para te ajudar.
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Preciso pagar mensalidades de ferramentas caras?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Não! Ensino-te principalmente ferramentas gratuitas e algumas com custos muito baixos. 
+                        O investimento compensa logo no primeiro cliente.
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Como funciona a garantia?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Tens 30 dias para testar tudo. Se não estiveres 100% satisfeita com os resultados, 
+                        devolvemos o teu dinheiro sem perguntas. O risco é todo meu.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Termos de Uso</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Contacto</a>
+            <a href="https://www.isabeldigitall.pt">Isabel Digital</a>
+        </div>
+        <p>&copy; 2024 Isabel Digital. Todos os direitos reservados.</p>
+        <p style="margin-top: 1rem; opacity: 0.7;">
+            Feito com 💕 para gestoras que querem transformar as suas vidas
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Progress Bar
+        function updateProgressBar() {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.querySelector('.progress-bar').style.width = scrollPercent + '%';
+        }
+
+        window.addEventListener('scroll', updateProgressBar);
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .journey-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // FAQ Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked FAQ if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Music Player
+        let musicPlaying = false;
+        let backgroundMusic;
+
+        function toggleMusic() {
+            const icon = document.getElementById('music-icon');
+            const player = document.querySelector('.music-player');
+            
+            if (!backgroundMusic) {
+                // Create audio element for background music
+                backgroundMusic = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSl+1OzTijkGHGS/7+OZURE');
+                backgroundMusic.loop = true;
+                backgroundMusic.volume = 0.3;
+            }
+            
+            if (musicPlaying) {
+                backgroundMusic.pause();
+                icon.textContent = '🎵';
+                player.classList.remove('playing');
+                musicPlaying = false;
+            } else {
+                backgroundMusic.play().catch(() => {});
+                icon.textContent = '🎶';
+                player.classList.add('playing');
+                musicPlaying = true;
+            }
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax Effect for floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelectorAll('.floating-heart');
+            
+            parallax.forEach(element => {
+                const speed = 0.5;
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+
+        // Add random floating hearts
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            heart.textContent = ['💕', '✨', '💫', '🌟'][Math.floor(Math.random() * 4)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.top = '100%';
+            heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            
+            document.querySelector('.hero .floating-elements').appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 8000);
+        }
+
+        // Create floating hearts periodically
+        setInterval(createFloatingHeart, 3000);
+
+        // Hover effects for interactive elements
+        document.querySelectorAll('.cta-button, .cta-final, .testimonial-card, .community-feature').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                el.style.transform = el.style.transform + ' scale(1.02)';
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = el.style.transform.replace(' scale(1.02)', '');
+            });
+        });
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            updateProgressBar();
+            
+            // Add entrance animation to hero
+            setTimeout(() => {
+                document.querySelector('.hero-content').classList.add('visible');
+                document.querySelector('.hero-image').classList.add('visible');
+            }, 500);
+        });
+
+        // Easter egg: Double click on title
+        document.querySelector('.hero-title').addEventListener('dblclick', () => {
+            const hearts = ['💕', '💖', '💗', '💘', '💝', '💞', '💟', '❤️'];
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    createFloatingHeart();
+                }, i * 100);
+            }
+        });
+
+        // Auto-play video when in viewport (if video element exists)
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target.querySelector('video');
+                if (video) {
+                    if (entry.isIntersecting) {
+                        video.play().catch(() => {});
+                    } else {
+                        video.pause();
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.hero-video, .video-placeholder').forEach(el => {
+            videoObserver.observe(el);
+        });
+    </script>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "BABIA - Bê-à-Bá da Inteligência Artificial",
+        "description": "Curso online que ensina gestoras de redes sociais a usar IA para multiplicar a produtividade",
+        "provider": {
+            "@type": "Organization",
+            "name": "Isabel Digital",
+            "url": "https://www.isabeldigitall.pt"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "67",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+        },
+        "duration": "PT3H",
+        "courseMode": "online",
+        "educationalLevel": "beginner"
+    }
+    </script>
+
+    <!-- Facebook Pixel Placeholder -->
+    <!-- 
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+    -->
+
+    <!-- Google Analytics Placeholder -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_GA_ID');
+    </script>
+    -->
+</body>
+</html>
