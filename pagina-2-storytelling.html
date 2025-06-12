@@ -24,6 +24,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    
     <style>
         /* Variables */
         :root {
@@ -47,6 +50,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        /* Força Montserrat em TODOS os elementos */
+        *, *::before, *::after {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
         }
 
         body {
