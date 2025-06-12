@@ -36,9 +36,9 @@
     --transition-slow: 0.5s ease;
     
     /* Tipografia */
-    --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-script: 'Dancing Script', cursive;
+    --font-system: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    --font-script: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
     
     /* Espaçamentos */
     --space-xs: 0.25rem;
